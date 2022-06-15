@@ -7,25 +7,16 @@
 */
 int main(int argc, char *argv[])
 {
-	char *av;
+	char *av, **tok;
 	pid_t child_pid;
-	char **arr = malloc(sizeof(char *) * 1024);
-	size_t n = 1024, i = 0;
-	char *tok;
+	size_t n = 1024;
 	int status;
 
 	if (argc < 0)
 		return (1);
 	printf("cisfun$ ");
 	getline(&av, &n, stdin);
-	tok = strtok(av, " ");
-	while (tok != NULL)
-	{
-		arr[i] = tok;
-		tok = strtok(NULL, " ");
-		i++;
-	}
-	arr[i] = NULL;
+	tok = tokenizer(av);
 	child_pid = fork();
 	if (child_pid == -1)
 	{
@@ -34,7 +25,7 @@ int main(int argc, char *argv[])
 	}
 	if (child_pid == 0)
 	{
-		if (execve(arr[0], arr, NULL) == -1)
+		if (execve(tok[0], tok, NULL) == -1)
 		{
 			perror("Error: excec error");
 			return (1);
@@ -49,6 +40,5 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 	}
-	free(arr);
 	return (0);
 }
