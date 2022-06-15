@@ -12,8 +12,7 @@ int main(int argc, char *argv[])
 	char **av = malloc(sizeof(char *) * 1024);
 	pid_t child_pid;
 	char **arr = malloc(sizeof(char *) * 1024);
-	size_t n = 1024;// i = 0;
-//	char *tok;
+	size_t n = 1024;
 	int status;
 
 	if (argc < 0)
@@ -21,17 +20,6 @@ int main(int argc, char *argv[])
 
 	printf("cisfun$ ");
 	getline(av, &n, stdin);
-/*
-	tok = strtok(av, " ");
-	while (tok != NULL)
-	{
-		arr[i] = tok;
-		tok = strtok(NULL, " ");
-		i++;
-	}
-	arr[i] = NULL;
-
-*/
 	child_pid = fork();
 	if (child_pid == -1)
 	{
