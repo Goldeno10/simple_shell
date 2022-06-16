@@ -14,7 +14,7 @@ Installation:
 
 					gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh	
 
-		Name "hsh" can be changed as you desire.	
+Name "hsh" can be changed as you desire.	
 Usage:
 	 This program can run stand-alone, either in interactive or non-interactive mode.
 
@@ -26,11 +26,9 @@ Exiting Interactive Mode:
 Non-Interactive Mode:
 	 This prigram also runs in non interactive mode too, just echo your desired command and pipe it into the program,
 
-					echo "ls" | ./hsh	
+					echo "ls" | ./hsh
 
 	where hsh is the name of your output file from the installion stage
-
-
 Usage guidline:
 	The command should be simple with 
 		no semicolons,
