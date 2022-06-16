@@ -6,13 +6,13 @@ A simple C shell project
 
 Description: 
 	This is a simple UNIX command interpreter that replicates functionalities of the simple shell (sh).
- Additional functions are also included. This program was written entirely in C as a milestone project for Alx-Holberton School.
+ This program was written entirely in C as a milestone project for Alx-Holberton School.
 
 Installation:
 	Clone this repository into your working directory. Files should be compiled with GCC and the following flags:
 			 -Wall -Wextra -Werror -pedantic -Wno-format
 
-					gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh	
+				gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh	
 
 Name "hsh" can be changed as you desire.	
 Usage:
