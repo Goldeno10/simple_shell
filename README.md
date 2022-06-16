@@ -12,7 +12,7 @@ Installation:
 	Clone this repository into your working directory. Files should be compiled with GCC and the following flags:
 			 -Wall -Wextra -Werror -pedantic -Wno-format
 
-				gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh	
+			gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh	
 
 Name "hsh" can be changed as you desire.	
 Usage:
