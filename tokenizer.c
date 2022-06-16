@@ -42,7 +42,7 @@ char **tokenizer(char *line)
 		token = strtok(NULL, delim);
 		index++;
 	}
-	tokens[index] = '\0';
+	tokens[index] = NULL;
 	free(buf);
 	return (tokens);
 }
