@@ -28,7 +28,7 @@ Non-Interactive Mode:
 
 					echo "ls" | ./hsh
 
-	where hsh is the name of your output file from the installion stage
+where hsh is the name of your output file from the installion stage.
 Usage guidline:
 	The command should be simple with 
 		no semicolons,
@@ -38,4 +38,4 @@ Usage guidline:
 		
 
 Credits:
-	 All codes written by Owaji-inyagham Ogbuluijah and Muhammad Ibrahim Baba.
+	 Owaji-inyagham Ogbuluijah and Muhammad Ibrahim Baba.
